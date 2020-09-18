@@ -35,6 +35,4 @@
 .idea/
 /cmake-build-debug
 /sample
-*.DS_Store
-/.vs
-/out/build/x64-Debug (predeterminado)
+.DS_Store
