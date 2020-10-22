@@ -3,10 +3,15 @@
 #include "Title.h"
 
 
-class Professor: Person {
+class Professor : Person {
 private:
-Title tit;
+    Title tit;
 public:
-Professor();
-Professor( std::string name,std::string nameTit,std::string grade);
-virtual ~Professor();
+    Professor();
+
+    Professor(std::string name, std::string nameTit, std::string grade);
+
+    virtual ~Professor();
+
+    std::string toString() const override;
+};

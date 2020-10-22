@@ -1,36 +1,37 @@
 
-
 #include "Person.h"
-using namespace std;
+#include <utility>
 
-//prueba de visual 
 
-Person::Person(){
-  name= "";
-  
-}
-Person::Person(std::string n){
-  name=n;
- 
-}
-Person::~Person(){
+Person::Person() {
+    name = "";
 
 }
 
-std::string Person::getFirstName(){
-return name;
-
-}
-void Person::setFirstName(string nom){
-name=nom;
+Person::Person(std::string n) {
+    name = n;
 
 }
 
-std::string Person::toString()const{
-stringstream s;
+Person::~Person() {
 
-s<<"Nombre: "<<name<<"\n";
+}
 
-return s.str();
+std::string Person::getFirstName() {
+    return name;
+
+}
+
+void Person::setFirstName(std::string nom) {
+    name = nom;
+
+}
+
+std::string Person::toString() const {
+    std::stringstream s;
+
+    s << "Nombre: " << name << "\n";
+
+    return s.str();
 
 }

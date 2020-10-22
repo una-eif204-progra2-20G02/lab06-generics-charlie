@@ -10,9 +10,10 @@ std::string grade;
 public:
 Title();
 Title(std::string nom, std::string gra);
+~Title();
 std::string getName();
 void setName(std::string nom);
 std::string getGrade();
 void setGrade(std::string gra);
-std::string toString();
+std::string toString()const;
 };
